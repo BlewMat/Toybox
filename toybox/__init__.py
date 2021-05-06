@@ -23,6 +23,12 @@ try:
         nondeterministic=False
     )
 
+    register(
+        id='OthelloToyboxNoFrameskip-v4',
+        entry_point='toybox.envs.atari:OthelloEnv',
+        nondeterministic=False
+    )
+
     print("Registered Toybox environments with gym.")
 
 except:
