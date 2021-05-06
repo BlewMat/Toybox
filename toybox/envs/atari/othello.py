@@ -6,7 +6,7 @@ import sys
 
 class OthelloEnv(ToyboxBaseEnv):
     def __init__(self, frameskip=(0, 0), repeat_action_probability=0., grayscale=True, alpha=False):
-        super().__init__(Toybox('othello', grayscale),
+        super().__init__(Toybox('othello', grayscale), 'othello',
             frameskip, repeat_action_probability,
             grayscale=grayscale,
             alpha=alpha)
